@@ -1,6 +1,6 @@
 
 
-![image](https://github.com/DonjetDana/ConstructionWebsite/assets/168549398/999675cb-7084-4516-8266-12e41c7302d2)
+
 
 
 ## Available Scripts
