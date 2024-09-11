@@ -1,0 +1,185 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #f5f5f5;
+}
+
+.career-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.career-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #faf8f8;
+}
+
+/* Job Card Styles */
+.job-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 300px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.job-card:hover {
+    transform: translateY(-10px);
+}
+
+.job-card-content {
+    padding: 20px;
+}
+
+.job-card-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #050505;
+}
+
+.job-card-content p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.apply-button {
+    background-color: #242525;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #50a2e6;
+}
+
+/* Application Form Styles */
+.application-form {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.application-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #eee9e9;
+}
+
+.application-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.application-form label {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #dad8d8;
+}
+
+.application-form input[type="text"],
+.application-form input[type="email"],
+.application-form input[type="file"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.submit-button {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .job-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job-card {
+        width: 80%;
+    }
+
+    .application-form {
+        width: 90%;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .career-section h2 {
+        font-size: 2em;
+    }
+
+    .job-card-content h3 {
+        font-size: 1.5em;
+    }
+
+    .apply-button {
+        padding: 8px 12px;
+    }
+
+    .application-form h2 {
+        font-size: 1.8em;
+    }
+
+    .submit-button {
+        padding: 10px;
+        font-size: 1em;
+    }
+}

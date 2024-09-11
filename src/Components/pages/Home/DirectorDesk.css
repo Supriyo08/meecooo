@@ -1,0 +1,45 @@
+/* Ensure this CSS file is properly linked */
+.director-desk-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+   
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  .director-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .director-image {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Circle shape */
+    object-fit: cover;
+    border: 3px solid #007bff; /* Optional border color */
+  }
+  
+  .director-description {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .director-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5914d7; /* Match your theme color */
+    margin-bottom: 10px;
+  }
+  
+  .director-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  

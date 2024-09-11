@@ -1,0 +1,118 @@
+.services-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-card {
+    height: 100px; /* Fixed height for uniformity */
+    background-color: #f0f0f0; /* Example background color */
+    display: flex;
+    align-items: center;
+    padding: 10px 15px; /* Adjusted padding */
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    white-space: nowrap; /* Prevent text wrap */
+}
+.serviceh2 {
+    font-size: 2.9em;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-icon {
+    margin-right: 15px; /* Adjusted margin */
+    font-size: 20px; /* Adjusted font size */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.service-card h3 {
+    font-size: 18px; /* Adjusted font size */
+    margin: 0; /* Removed default margin */
+    line-height: 1.2; /* Adjusted line height */
+    flex-shrink: 0; /* Prevent title from shrinking */
+}
+
+.service-card p {
+    font-size: 14px; /* Adjusted font size */
+    margin: 0; /* Removed default margin */
+    flex-grow: 1; /* Allow description to grow */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    white-space: nowrap; /* Prevent text wrap */
+}
+
+.service-button {
+    padding: 8px 12px; /* Adjusted padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+.service-button:hover {
+    background-color: #0056b3;
+}
+
+.service-card:nth-child(1) {
+    width: 29%;
+}
+
+.service-card:nth-child(2) {
+    width: 40%;
+}
+
+.service-card:nth-child(3) {
+    width: 60%;
+}
+
+.service-card:nth-child(4) {
+    width: 80%;
+}
+
+.service-card:nth-child(5) {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .service-card:nth-child(1) {
+        width: 40%;
+    }
+
+    .service-card:nth-child(2) {
+        width: 60%;
+    }
+
+    .service-card:nth-child(3) {
+        width: 80%;
+    }
+
+    .service-card:nth-child(4) {
+        width: 100%;
+    }
+
+    .service-card:nth-child(5) {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+    }
+}
